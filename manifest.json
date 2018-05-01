@@ -1,3 +1,4 @@
 {
-  "bundle-id": "minimal"
+  "id": "minimal",
+  "name": "Minimal Resource Bundle for Testing"
 }
