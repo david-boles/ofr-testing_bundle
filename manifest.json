@@ -1,4 +1,14 @@
 {
-  "id": "testing",
-  "name": "Resource Bundle for Testing"
+  "metadata": {
+    "id": "testing",
+    "name": "Resource Bundle for Testing"
+  },
+  "resources": {
+    "documents": {
+
+    },
+    "terms": {
+
+    }
+  }
 }
