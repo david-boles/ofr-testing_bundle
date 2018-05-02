@@ -1,13 +1,10 @@
 {
   "metadata": {
     "name": "A Second Manifest"
+  }
+  "documents": {
+
   },
-  "resources": {
-    "documents": {
-
-    },
-    "terms": {
-
-    }
+  "terms": {
   }
 }
