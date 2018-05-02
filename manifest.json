@@ -3,9 +3,19 @@
     "name": "Resource Bundle for Testing"
   },
   "documents": {
-
+    "doc1": {
+      "name": "Document 1"
+    },
+    "overridenDoc": {
+      "name": "Doc Will Be Overriden"
+    }
   },
   "terms": {
-
+    "term1": {
+      "name": "Term 1"
+    },
+    "overridenTerm": {
+      "name": "Term Will Be Overriden"
+    }
   }
 }
