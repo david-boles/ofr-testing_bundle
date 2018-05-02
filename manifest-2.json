@@ -3,8 +3,19 @@
     "name": "A Second Manifest"
   },
   "documents": {
-
+    "doc2": {
+      "name": "Document 2"
+    },
+    "overridenDoc": {
+      "name": "Doc Has Been Overriden"
+    }
   },
   "terms": {
+    "term2": {
+      "name": "Term 2"
+    },
+    "overridenTerm": {
+      "name": "Term Has Been Overriden"
+    }
   }
 }
