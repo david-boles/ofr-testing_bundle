@@ -4,7 +4,7 @@
   },
   "documents": {
     "doc2": {
-      "name": "Document 2"
+      "name": "New Document 2"
     },
     "overridenDoc": {
       "name": "Doc Has Been Overriden"
