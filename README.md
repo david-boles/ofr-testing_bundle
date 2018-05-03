@@ -1,7 +1,7 @@
 # JSON API
 All OFR dynamically retrived data is JSON files parsable into an object.
 
-## Manifest Objects
+## `Manifest` Objects
 Minimal requirement:
 ```json
 {
@@ -24,7 +24,7 @@ The objects `.resources` object contains resourceID keys and ResourceInfo values
 }
 ```
 
-## ResourceInfo Objects
+## `ResourceInfo` Objects
 ResourceInfo objects contain metadata about resources provided by a bundle. At a minimum they need a `name` and a `type`:
 ```json
 {
