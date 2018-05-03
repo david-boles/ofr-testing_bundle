@@ -45,7 +45,7 @@ collection | A resource that includes other resources into it's own page as a li
 ```json
 {
   "name": "Your Resource's Name",
-  "type": "resourceType"
+  "type": "resourceType",
   "description": "Your resource's description."
 }
 ```
