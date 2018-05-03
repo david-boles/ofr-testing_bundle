@@ -1,8 +1,17 @@
 # JSON API
 All OFR dynamically retrived data is JSON files parsable into an object.
 ## Manifests
+Minimal requirement:
 ```
 {
-  "foo": "bar"
+  "metadata": {
+    name: "Your Resource Bundle's Name"
+  },
+  "documents": {
+  
+  },
+  "terms": {
+  
+  }
 }
 ```
