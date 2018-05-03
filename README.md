@@ -11,7 +11,7 @@ Minimal requirement:
   "terms": {}
 }
 ```
-The objects `.documents` and `.terms` contain document/termID key-Document/TermInfo object pairs. E.g.
+The objects `.documents` and `.terms` contain document/termID key, Document/TermInfo object pairs. E.g.
 ```json
 {
   "metadata": {
@@ -19,11 +19,11 @@ The objects `.documents` and `.terms` contain document/termID key-Document/TermI
   },
   "documents": {
     "docID1": DocumentInfo,
-    "docID2": <a DocumentInfo object>
+    "docID2": DocumentInfo
   },
   "terms": {
-    "termID1": <a TermInfo object>,
-    "termID2": <a TermInfo object>
+    "termID1": TermInfo,
+    "termID2": TermInfo
   }
 }
 ```
