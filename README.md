@@ -1,6 +1,7 @@
 # JSON API
 All OFR dynamically retrived data is JSON files parsable into an object.
-## Manifests
+
+## Manifests Objects
 Minimal requirement:
 ```json
 {
@@ -25,5 +26,14 @@ The objects `.documents` and `.terms` contain document/termID key, Document/Term
     "termID1": TermInfo,
     "termID2": TermInfo
   }
+}
+```
+
+## DocumentInfo Objects
+Minimal requirement:
+```json
+{
+  "name": "Your Document's Name",
+  "type": "docType"
 }
 ```
