@@ -1,45 +1,42 @@
 # JSON API
 All OFR dynamically retrived data is JSON files parsable into an object.
 
-## Manifests Objects
+## Manifest Objects
 Minimal requirement:
 ```json
 {
   "metadata": {
     "name": "Your Resource Bundle's Name"
   },
-  "documents": {},
-  "terms": {}
+  "resources": {}
 }
 ```
-The objects `.documents` and `.terms` contain document/termID key, Document/TermInfo object pairs. E.g.
+The objects `.resources` object contains resourceID keys and ResourceInfo values. E.g.
 ```json
 {
   "metadata": {
     "name": "Your Resource Bundle's Name"
   },
-  "documents": {
-    "docID1": DocumentInfo,
-    "docID2": DocumentInfo
-  },
-  "terms": {
-    "termID1": TermInfo,
-    "termID2": TermInfo
+  "resources": {
+    "resourceID1": ResourceInfo,
+    "resourceID2": ResourceInfo
   }
 }
 ```
 
-## DocumentInfo Objects
-Minimal requirement:
+## ResourceInfo Objects
+ResourceInfo objects contain metadata about resources provided by a bundle. At a minimum they need a `name` and a `type`:
 ```json
 {
-  "name": "Your Document's Name",
-  "type": "docType"
+  "name": "Your Resource's Name",
+  "type": "resourceType"
 }
 ```
-The `type` key is required to have one of the following `docType`s:
+The `type` key is required to have one of the following `resourceType`s. Each corresponds to a definition on this page:
 
 type | description
 --- | ---
-simple | A one page document with some content on it.
-index | An 
+document | A page of information.
+term | A term that should be included in the glossary and can be used in other resources.
+index | A resource providing links to other resources.
+collection | A resource that includes other resources into it's own page as a linear progression.
