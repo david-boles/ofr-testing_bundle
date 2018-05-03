@@ -5,6 +5,7 @@
   "documents": {
     "doc1": {
       "name": "Document 1"
+      "type": "simple"
     },
     "overridenDoc": {
       "name": "Doc Will Be Overriden"
