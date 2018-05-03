@@ -4,7 +4,7 @@
   },
   "documents": {
     "doc1": {
-      "name": "Document 1"
+      "name": "Document 1",
       "type": "simple"
     },
     "overridenDoc": {
