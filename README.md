@@ -37,3 +37,7 @@ Minimal requirement:
   "type": "docType"
 }
 ```
+The `type` key is required to have one of the following `docType`s:
+type | description
+simple | A one page document with some content on it.
+index | An 
