@@ -6,7 +6,7 @@
     "doc1": {
       "name": "Document 1",
       "type": "simple",
-      "url": "https://"
+      "url": "https://david476.github.io/ofr-testing_bundle/doc1.json"
     },
     "overridenDoc": {
       "name": "Doc Will Be Overriden"
