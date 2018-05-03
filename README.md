@@ -2,7 +2,7 @@
 All OFR dynamically retrived data is JSON files parsable into an object.
 ## Manifests
 Minimal requirement:
-```
+```json
 {
   "metadata": {
     name: "Your Resource Bundle's Name"
@@ -12,7 +12,7 @@ Minimal requirement:
 }
 ```
 The objects `.documents` and `.terms` contain document/termID key-Document/TermInfo object pairs. E.g.
-```
+```json
 {
   "metadata": {
     name: "Your Resource Bundle's Name"
