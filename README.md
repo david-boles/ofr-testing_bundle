@@ -5,7 +5,7 @@ Minimal requirement:
 ```json
 {
   "metadata": {
-    name: "Your Resource Bundle's Name"
+    "name": "Your Resource Bundle's Name"
   },
   "documents": {},
   "terms": {}
@@ -15,10 +15,10 @@ The objects `.documents` and `.terms` contain document/termID key-Document/TermI
 ```json
 {
   "metadata": {
-    name: "Your Resource Bundle's Name"
+    "name": "Your Resource Bundle's Name"
   },
   "documents": {
-    "docID1": <a DocumentInfo object>,
+    "docID1": DocumentInfo,
     "docID2": <a DocumentInfo object>
   },
   "terms": {
