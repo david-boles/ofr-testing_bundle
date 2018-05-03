@@ -5,7 +5,8 @@
   "documents": {
     "doc1": {
       "name": "Document 1",
-      "type": "simple"
+      "type": "simple",
+      "url": "https://"
     },
     "overridenDoc": {
       "name": "Doc Will Be Overriden"
