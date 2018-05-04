@@ -78,4 +78,4 @@ The value of `url` must begin with `https://` and should point to a valid `Docum
   "url": "http://www.example.com"
 }
 ```
-There are no restricitons as to the contents of the URL. If both a `docID` and `url` are specified, OFR will try to link to the document if it exists, otherwise it will fall back to the URL.
+There are no restrictions as to the contents of the URL. If both a `docID` and `url` are specified, OFR will try to link to the document if it exists, otherwise it will fall back to the URL.
