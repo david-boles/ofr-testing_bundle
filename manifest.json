@@ -31,5 +31,10 @@
       "description": "The second term in this bundle",
       "resourceID": "doc1"
     }
-  }
+  },
+  "featured": [
+    "doc1",
+    "unlisted_doc",
+    "term2"
+  ]
 }
