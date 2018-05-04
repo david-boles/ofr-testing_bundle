@@ -41,14 +41,16 @@ term | A term that should be included in the glossary and can be used in other r
 index | A resource providing links to other resources.
 collection | A resource that includes other resources into it's own page as a linear progression.
 
-`ResourceInfo` objects can also __optionally__ specify a `description` attribute:
+`ResourceInfo` objects can also optionally specify a `description` attribute which must be a string and/or an `unlisted` attribute:
 ```json
 {
   "name": "Your Resource's Name",
   "type": "resourceType",
-  "description": "Your resource's description."
+  "description": "Your resource's description.",
+  "unlisted': true
 }
 ```
+The `unlisted` attribute is intended for resources that will primarily be used within other resources, and shouldn't be found individually.
 
 ## `DocumentInfo` Objects
 `DocumentInfo` objects are a subset of `ResourceInfo` objects and contain metadata about documents provided by a bundle. In addition to a `name`, optional `description`, and `type` of `document` attributes they require a `url` attribute:
@@ -79,3 +81,29 @@ The value of `url` must begin with `https://` and should point to a valid `Docum
 }
 ```
 There are no restrictions as to the contents of the URL. If both a `resource` and `url` are specified, OFR will try to link to the resource if it exists, otherwise it will fall back to the URL.
+
+## `IndexInfo` Objects
+`TermInfo` objects are a subset of `ResourceInfo` objects. They require an additional `indexed` attribute containing an array of string `resourceID`s:
+```json
+{
+  "name": "Your Index's Name",
+  "type": "index",
+  "indexed": [
+    "resourceID1",
+    "resourceID2"
+  ]
+}
+```
+
+## `CollectionInfo` Objects
+`CollectionInfo` objects are a subset of `ResourceInfo` objects. They require an additional `collected` attribute containing an array of string `resourceID`s:
+```json
+{
+  "name": "Your Index's Name",
+  "type": "index",
+  "collected": [
+    "resourceID1",
+    "resourceID2"
+  ]
+}
+```
