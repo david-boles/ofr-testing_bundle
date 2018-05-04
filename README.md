@@ -66,7 +66,7 @@ collection | A resource that includes other resources into it's own page as a li
   "unlisted": true
 }
 ```
-The `unlisted` attribute is intended for resources that will primarily be used within other resources and therefore shouldn't be found individually.
+The `unlisted` tells the site not to make finding the resource individually very easy. It will not prevent the resource from being used in, linked from, or indexed by any other resources. It also does not prevent it from being featured.
 
 ## `DocumentInfo` Objects
 `DocumentInfo` objects are a subset of `ResourceInfo` objects and contain metadata about documents provided by a bundle. In addition to a `name`, optional `description`, and `type` of `document` attributes they require a `url` attribute:
