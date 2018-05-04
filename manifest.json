@@ -9,6 +9,13 @@
       "url": "https://david476.github.io/ofr-testing_bundle/doc1.json",
       "description": "This is a document..."
     },
+    "doc2": {
+      "name": "Document 2",
+      "type": "document",
+      "url": "https://david476.github.io/ofr-testing_bundle/doc1.json",
+      "description": "This is a document...",
+      "homepage": true
+    },
     "unlisted_doc": {
       "name": "Unlisted Document",
       "type": "document",
