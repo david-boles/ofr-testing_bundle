@@ -23,6 +23,22 @@ A manifest's `resources` object contains zero or more `resourceID` keys and `Res
   }
 }
 ```
+Bundle manifests can also contain a `featured` array containing `resourceID`s:
+```json
+{
+  "metadata": {
+    "name": "Your Resource Bundle's Name"
+  },
+  "resources": {
+    "resourceID1": ResourceInfo,
+    "resourceID2": ResourceInfo
+  },
+  "featured": [
+    "resourceID1",
+    "resourceID2"
+  ]
+}
+```
 
 ## `ResourceInfo` Objects
 `ResourceInfo` objects contain metadata about resources provided by a bundle. At a minimum they need a `name` and a `type`:
