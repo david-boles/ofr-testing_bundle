@@ -56,7 +56,7 @@ collection | A resource that includes other resources into it's own page as a li
 {
   "name": "Your Documents's Name",
   "type": "document",
-  "url": "https://your.document/url"
+  "url": "https://your.document/url.json"
 }
 ```
 The value of `url` must begin with `https://` and should point to a valid `Document` object served as JSON.
