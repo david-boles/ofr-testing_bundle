@@ -1,5 +1,5 @@
 # JSON API
-All OFR dynamically retrived data is JSON files parsable into an object.
+Note: 'must' means 'invalid if not' while 'should' means 'it is recommended but not necessary'.
 
 ## `Manifest` Objects
 Minimal requirement:
@@ -54,9 +54,28 @@ collection | A resource that includes other resources into it's own page as a li
 `DocumentInfo` objects are a subset of `ResourceInfo` objects and contain metadata about documents provided by a bundle. In addition to a `name`, optional `description`, and `type` of `document` attributes they require a `url` attribute:
 ```json
 {
-  "name": "Your Documents's Name",
+  "name": "Your Document's Name",
   "type": "document",
   "url": "https://your.document/url.json"
 }
 ```
 The value of `url` must begin with `https://` and should point to a valid `Document` object served as JSON.
+
+## `TermInfo` Objects
+`TermInfo` objects are a subset of `ResourceInfo` objects and contain metadata about terms provided by a bundle. A `TermInfo` object must have `type` be `term` and one or more of `description`, `url` or `docID` parameters.
+```json
+{
+  "name": "Your Term's Name",
+  "type": "term",
+  "docID": "docID1"
+}
+```
+```json
+{
+  "name": "Your Term's Name",
+  "type": "term",
+  "description": "Description of the term."
+  "url": "http://www.example.com"
+}
+```
+There are no restricitons as to the contents of the URL. If both a `docID` and `url` are specified, OFR will try to link to the document if it exists, otherwise it will fall back to the URL.
