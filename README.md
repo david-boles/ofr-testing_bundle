@@ -1,8 +1,8 @@
-# JSON API
-Note: 'must' means 'invalid if not' while 'should' means 'it is recommended but not necessary'.
+Note: 'must' or 'requuires' means 'invalid if not' while 'should' means 'it is recommended but not necessary'.
 
+# Objects That Store Content Metadata
 ## `Manifest` Objects
-Minimal requirement:
+Resource bundle manifests contain metadata the bundle itself and all of it's resources. At a minimum they must contain the following:
 ```json
 {
   "metadata": {
@@ -11,7 +11,7 @@ Minimal requirement:
   "resources": {}
 }
 ```
-The objects `.resources` object contains resourceID keys and ResourceInfo values. E.g.
+A manifest's `resources` object contains zero or more `resourceID` keys and `ResourceInfo` values. E.g.
 ```json
 {
   "metadata": {
@@ -32,7 +32,7 @@ The objects `.resources` object contains resourceID keys and ResourceInfo values
   "type": "resourceType"
 }
 ```
-The `type` key is required to have one of the following `resourceType`s. Each corresponds to a definition on this page:
+The `type` key is required to have one of the following `resourceType`s. Each corresponds to a definition on this page and each type has it's own additional requirements:
 
 type | description
 --- | ---
