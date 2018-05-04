@@ -71,7 +71,7 @@ The `unlisted` attribute is intended for resources that will primarily be used w
 The value of `url` must begin with `https://` and should point to a valid `Document` object served as JSON.
 
 ## `TermInfo` Objects
-`TermInfo` objects are a subset of `ResourceInfo` objects and contain metadata about terms provided by a bundle. A `TermInfo` object must have a `type` of `term` and one or more of `description`, `url` or `resourceID` parameters.
+`TermInfo` objects are a subset of `ResourceInfo` objects and contain metadata about terms provided by a bundle. A `TermInfo` object must have a `type` of `term` and should have one or more of `description`, `url` or `resourceID` parameters.
 ```json
 {
   "name": "Your Term's Name",
