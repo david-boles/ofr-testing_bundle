@@ -74,7 +74,7 @@ The value of `url` must begin with `https://` and should point to a valid `Docum
 {
   "name": "Your Term's Name",
   "type": "term",
-  "description": "Description of the term."
+  "description": "Description of the term.",
   "url": "http://www.example.com"
 }
 ```
