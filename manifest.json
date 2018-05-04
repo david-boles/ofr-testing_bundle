@@ -6,7 +6,15 @@
     "doc1": {
       "name": "Document 1",
       "type": "document",
-      "url": "https://david476.github.io/ofr-testing_bundle/doc1.json"
+      "url": "https://david476.github.io/ofr-testing_bundle/doc1.json",
+      "description": "This is a document..."
+    },
+    "unlisted_doc": {
+      "name": "Unlisted Document",
+      "type": "document",
+      "url": "https://david476.github.io/ofr-testing_bundle/doc1.json",
+      "unlisted": true,
+      "homepage": true
     },
     "term1": {
       "name": "Term 1",
