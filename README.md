@@ -41,7 +41,7 @@ term | A term that should be included in the glossary and can be used in other r
 index | A resource providing links to other resources.
 collection | A resource that includes other resources into it's own page as a linear progression.
 
-`ResourceInfo` objects can also optionally specify a `description` attribute which must be a string, an `unlisted` boolean attribute and/or a `homepage` boolean attribute:
+`ResourceInfo` objects can also optionally specify a `description` attribute which must be a string and/or an `unlisted` boolean attribute:
 ```json
 {
   "name": "Your Resource's Name",
@@ -50,14 +50,7 @@ collection | A resource that includes other resources into it's own page as a li
   "unlisted": true
 }
 ```
-```json
-{
-  "name": "Your Resource's Name",
-  "type": "resourceType",
-  "homepage": true
-}
-```
-The `unlisted` attribute is intended for resources that will primarily be used within other resources and therefore shouldn't be found individually. The `homepage` attribute results in this resource being listed on the homepage. It overrides `unlisted` in that context.
+The `unlisted` attribute is intended for resources that will primarily be used within other resources and therefore shouldn't be found individually.
 
 ## `DocumentInfo` Objects
 `DocumentInfo` objects are a subset of `ResourceInfo` objects and contain metadata about documents provided by a bundle. In addition to a `name`, optional `description`, and `type` of `document` attributes they require a `url` attribute:
