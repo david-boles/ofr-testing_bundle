@@ -2,22 +2,21 @@
   "metadata": {
     "name": "Resource Bundle for Testing"
   },
-  "documents": {
+  "resources": {
     "doc1": {
       "name": "Document 1",
-      "type": "simple",
+      "type": "document",
       "url": "https://david476.github.io/ofr-testing_bundle/doc1.json"
     },
-    "overridenDoc": {
-      "name": "Doc Will Be Overriden"
-    }
-  },
-  "terms": {
     "term1": {
-      "name": "Term 1"
+      "name": "Term 1",
+      "type": "term",
+      "url": "https://material-ui-next.com/api/text-field/"
     },
-    "overridenTerm": {
-      "name": "Term Will Be Overriden"
+    "term2": {
+      "name": "Term 2",
+      "description": "The second term in this bundle",
+      "resourceID": "doc1"
     }
   }
 }
