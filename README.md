@@ -62,12 +62,12 @@ collection | A resource that includes other resources into it's own page as a li
 The value of `url` must begin with `https://` and should point to a valid `Document` object served as JSON.
 
 ## `TermInfo` Objects
-`TermInfo` objects are a subset of `ResourceInfo` objects and contain metadata about terms provided by a bundle. A `TermInfo` object must have `type` be `term` and one or more of `description`, `url` or `docID` parameters.
+`TermInfo` objects are a subset of `ResourceInfo` objects and contain metadata about terms provided by a bundle. A `TermInfo` object must have `type` be `term` and one or more of `description`, `url` or `resourceID` parameters.
 ```json
 {
   "name": "Your Term's Name",
   "type": "term",
-  "docID": "docID1"
+  "resourceID": "resourceID1"
 }
 ```
 ```json
@@ -78,4 +78,4 @@ The value of `url` must begin with `https://` and should point to a valid `Docum
   "url": "http://www.example.com"
 }
 ```
-There are no restrictions as to the contents of the URL. If both a `docID` and `url` are specified, OFR will try to link to the document if it exists, otherwise it will fall back to the URL.
+There are no restrictions as to the contents of the URL. If both a `resource` and `url` are specified, OFR will try to link to the resource if it exists, otherwise it will fall back to the URL.
