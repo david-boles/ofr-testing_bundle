@@ -45,8 +45,8 @@
       "description": "The second term in this bundle",
       "indexed": [
         "term3",
-        "index",
-        "doc1"
+        "doc1",
+        "term2"
       ]
     }
   },
