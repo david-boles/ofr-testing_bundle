@@ -40,10 +40,19 @@
       "description": "The second term in this bundle"
     },
     "index": {
-      "name": "An index of resources",
+      "name": "An Index of Resources",
       "type": "index",
-      "description": "The second term in this bundle",
+      "description": "An index.",
       "indexed": [
+        "term3",
+        "doc1",
+        "term2"
+      ]
+    },
+    "collection": {
+      "name": "An Collection of Resources",
+      "type": "collection",
+      "collected": [
         "term3",
         "doc1",
         "term2"
@@ -55,6 +64,8 @@
     "unlisted_doc",
     "term1",
     "term2",
-    "index"
+    "term3",
+    "index",
+    "collection"
   ]
 }
