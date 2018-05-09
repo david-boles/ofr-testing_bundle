@@ -30,7 +30,8 @@
       "name": "Term 2",
       "type": "term",
       "description": "The second term in this bundle",
-      "resourceID": "doc1"
+      "resourceID": "doc1",
+      "url": "https://material-ui-next.com/api/text-field/"
     },
     "term3": {
       "name": "Term 1",
