@@ -50,11 +50,12 @@
       ]
     },
     "collection": {
-      "name": "An Collection of Resources",
+      "name": "A Collection of Resources",
       "type": "collection",
       "collected": [
         "term3",
         "doc1",
+        "index",
         "term2"
       ]
     }
