@@ -36,6 +36,7 @@
   "featured": [
     "doc1",
     "unlisted_doc",
-    "doc2"
+    "term1",
+    "term2"
   ]
 }
