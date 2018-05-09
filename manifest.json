@@ -38,6 +38,16 @@
       "type": "term",
       "url": "https://material-ui-next.com/api/text-field/",
       "description": "The second term in this bundle"
+    },
+    "index": {
+      "name": "An index of resources",
+      "type": "index",
+      "description": "The second term in this bundle",
+      "indexed": [
+        "term3",
+        "index",
+        "doc1"
+      ]
     }
   },
   "featured": [
